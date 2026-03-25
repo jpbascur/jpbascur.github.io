@@ -1,0 +1,83 @@
+---
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Juan Pablo Bascur</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: system-ui, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; color: #1a1a1a; }
+      nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; }
+      nav a { font-size: 13px; color: #888; text-decoration: none; margin-left: 1.5rem; }
+      nav a:hover { color: #1a1a1a; }
+      .tag { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #534AB7; margin-bottom: 0.75rem; }
+      h1 { font-size: 40px; font-weight: 500; line-height: 1.15; margin-bottom: 1rem; }
+      h1 span { color: #534AB7; }
+      .bio { font-size: 15px; color: #555; line-height: 1.7; max-width: 520px; margin-bottom: 1.5rem; }
+      .links { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 3rem; }
+      .pill { font-size: 12px; padding: 5px 14px; border-radius: 999px; border: 1px solid #ddd; color: #555; text-decoration: none; }
+      .pill:hover { background: #f5f5f5; }
+      .section-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #aaa; margin-bottom: 1rem; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+      .card { border: 1px solid #eee; border-radius: 12px; padding: 1.25rem; text-decoration: none; color: inherit; display: block; position: relative; overflow: hidden; }
+      .card:hover { border-color: #ccc; }
+      .card-accent { position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+      .card-title { font-size: 14px; font-weight: 500; margin-bottom: 4px; }
+      .card-desc { font-size: 12px; color: #888; line-height: 1.5; }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <span style="font-size: 15px; font-weight: 500;">jpbascur.com</span>
+      <div>
+        <a href="#">work</a>
+        <a href="#">software</a>
+        <a href="#">writing</a>
+        <a href="#">blog</a>
+        <a href="#">hobbies</a>
+      </div>
+    </nav>
+
+    <div class="tag">Researcher · Developer · Writer</div>
+    <h1>Juan Pablo<br><span>Bascur</span></h1>
+    <p class="bio">Based in the Netherlands. I work in research evaluation and bibliometrics at CWTS Leiden, build open-source tools for exploring scientific literature, and write fiction somewhere between Borges and Calvino.</p>
+
+    <div class="links">
+      <a class="pill" href="https://github.com/jpbascur">GitHub</a>
+      <a class="pill" href="#">Google Scholar</a>
+      <a class="pill" href="https://linkedin.com/in/jpbascur">LinkedIn</a>
+      <a class="pill" href="#">ORCID</a>
+      <a class="pill" href="mailto:">Email</a>
+    </div>
+
+    <div class="section-label">Explore</div>
+    <div class="grid">
+      <a class="card" href="#">
+        <div class="card-accent" style="background: #534AB7;"></div>
+        <div class="card-title">Work & research</div>
+        <div class="card-desc">Bibliometrics, research evaluation, CWTS Leiden</div>
+      </a>
+      <a class="card" href="#">
+        <div class="card-accent" style="background: #1D9E75;"></div>
+        <div class="card-title">Software</div>
+        <div class="card-desc">ORION dashboard and open-source projects</div>
+      </a>
+      <a class="card" href="#">
+        <div class="card-accent" style="background: #D85A30;"></div>
+        <div class="card-title">Creative writing</div>
+        <div class="card-desc">Political fantasy, Borges & Calvino influences</div>
+      </a>
+      <a class="card" href="#">
+        <div class="card-accent" style="background: #BA7517;"></div>
+        <div class="card-title">Blog & essays</div>
+        <div class="card-desc">Thoughts on research, tools, and whatever else</div>
+      </a>
+      <a class="card" href="#">
+        <div class="card-accent" style="background: #D4537E;"></div>
+        <div class="card-title">Hobbies</div>
+        <div class="card-desc">The rest of who I am</div>
+      </a>
+    </div>
+  </body>
+</html>
