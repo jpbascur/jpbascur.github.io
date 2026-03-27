@@ -1,5 +1,6 @@
 ---
 ---
+<!-- Landing page: entry point to the site. Shows a brief intro and cards linking to each section. -->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -25,7 +26,7 @@
       .card-accent { position: absolute; top: 0; left: 0; right: 0; height: 3px; }
       .card-title { font-size: 14px; font-weight: 500; margin-bottom: 4px; }
       .card-desc { font-size: 12px; color: #888; line-height: 1.5; }
-      .wip { font-size: 12px; color: #888; text-align: center; padding: 6px; background: #f5f5f5; border-bottom: 1px solid #eee; margin: -2rem -1.5rem 2rem; }
+      .wip { font-size: 48px; font-weight: 700; color: #1a1a1a; text-align: center; padding: 1.5rem 0; margin-bottom: 2rem; border-bottom: 1px solid #eee; }
     </style>
   </head>
   <body>
@@ -33,7 +34,8 @@
     <nav>
       <span style="font-size: 15px; font-weight: 500;">jpbascur.com</span>
       <div>
-        <a href="#">work</a>
+        <a href="/professional">professional</a>
+        <a href="/work-history">work history</a>
         <a href="#">software</a>
         <a href="#">writing</a>
         <a href="#">blog</a>
@@ -47,18 +49,22 @@
 
     <div class="links">
       <a class="pill" href="https://github.com/jpbascur">GitHub</a>
-      <a class="pill" href="#">Google Scholar</a>
-      <a class="pill" href="https://linkedin.com/in/jpbascur">LinkedIn</a>
-      <a class="pill" href="#">ORCID</a>
-      <a class="pill" href="mailto:">Email</a>
+      <a class="pill" href="https://www.linkedin.com/in/juan-pablo-bascur-0a0927a4">LinkedIn</a>
+      <a class="pill" href="https://instagram.com/jpbascur">Instagram</a>
+      <a class="pill" href="mailto:juanpablobascurcifuentes@gmail.com">Email</a>
     </div>
 
     <div class="section-label">Explore</div>
     <div class="grid">
-      <a class="card" href="#">
+      <a class="card" href="/professional">
         <div class="card-accent" style="background: #534AB7;"></div>
-        <div class="card-title">Work & research</div>
-        <div class="card-desc">Bibliometrics, research evaluation, CWTS Leiden</div>
+        <div class="card-title">Professional</div>
+        <div class="card-desc">For employers and collaborators — CV, experience, and projects.</div>
+      </a>
+      <a class="card" href="/work-history">
+        <div class="card-accent" style="background: #534AB7;"></div>
+        <div class="card-title">Work history</div>
+        <div class="card-desc">For the curious — the story behind the resume.</div>
       </a>
       <a class="card" href="#">
         <div class="card-accent" style="background: #1D9E75;"></div>

@@ -1,0 +1,56 @@
+---
+// Work history page: warm, narrative, for curious readers. Tells the story behind the resume. Content lives in src/content/work/history.md
+import { getEntry, render } from 'astro:content';
+
+const entry = await getEntry('work', 'history');
+const { Content } = await render(entry);
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Work History — Juan Pablo Bascur</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: system-ui, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; color: #1a1a1a; }
+      nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; }
+      nav a { font-size: 13px; color: #888; text-decoration: none; margin-left: 1.5rem; }
+      nav a:hover { color: #1a1a1a; }
+      h1 { font-size: 32px; font-weight: 500; margin-bottom: 0.5rem; }
+      .subtitle { font-size: 14px; color: #888; margin-bottom: 2rem; }
+      .prose { font-size: 15px; color: #555; line-height: 1.7; }
+      .prose h2 { font-size: 20px; font-weight: 500; color: #1a1a1a; margin: 2.5rem 0 1rem; }
+      .prose h3 { font-size: 16px; font-weight: 500; color: #1a1a1a; margin: 1.5rem 0 0.5rem; }
+      .prose p { margin-bottom: 1rem; }
+      .prose ul { margin: 0.5rem 0 1rem 1.5rem; }
+      .prose li { margin-bottom: 0.25rem; }
+      .prose hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
+      .prose table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; font-size: 13px; }
+      .prose th { text-align: left; border-bottom: 1px solid #ddd; padding: 6px 8px; color: #1a1a1a; }
+      .prose td { border-bottom: 1px solid #f0f0f0; padding: 6px 8px; }
+      .prose a { color: #534AB7; text-decoration: none; }
+      .prose a:hover { text-decoration: underline; }
+      .prose em { color: #aaa; }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/" style="font-size: 15px; font-weight: 500; color: #1a1a1a;">jpbascur.com</a>
+      <div>
+        <a href="/professional">professional</a>
+        <a href="/work-history">work history</a>
+        <a href="#">software</a>
+        <a href="#">writing</a>
+        <a href="#">blog</a>
+        <a href="#">hobbies</a>
+      </div>
+    </nav>
+
+    <h1>Work History</h1>
+    <p class="subtitle">For the curious — the story behind the resume.</p>
+
+    <div class="prose">
+      <Content />
+    </div>
+  </body>
+</html>

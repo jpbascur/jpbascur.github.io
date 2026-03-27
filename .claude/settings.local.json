@@ -3,7 +3,9 @@
     "allow": [
       "Bash(npx astro:*)",
       "Bash(gh --version)",
-      "Bash(gh repo:*)"
+      "Bash(gh repo:*)",
+      "WebSearch",
+      "Bash(del \"e:\\\\Projects\\\\personal_page\\\\jpbascur-site\\\\src\\\\content\\\\config.ts\")"
     ]
   }
 }

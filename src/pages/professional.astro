@@ -1,0 +1,54 @@
+---
+---
+<!-- Professional page: formal, employer-facing. Contains a short bio, a link to open/download the CV PDF, and nothing else. Intentionally kept clean and minimal. -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Professional — Juan Pablo Bascur</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: system-ui, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; color: #1a1a1a; }
+      nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; }
+      nav a { font-size: 13px; color: #888; text-decoration: none; margin-left: 1.5rem; }
+      nav a:hover { color: #1a1a1a; }
+      h1 { font-size: 32px; font-weight: 500; margin-bottom: 2rem; }
+      .cv-note { font-size: 14px; color: #555; margin-bottom: 1rem; }
+      details { border: 1px solid #eee; border-radius: 12px; overflow: hidden; margin-bottom: 2rem; }
+      summary { font-size: 15px; font-weight: 500; padding: 1rem 1.25rem; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+      summary::-webkit-details-marker { display: none; }
+      summary::after { content: '+'; font-size: 20px; color: #aaa; }
+      details[open] summary::after { content: '−'; }
+      summary:hover { background: #fafafa; }
+      .btn { font-size: 13px; padding: 8px 18px; border-radius: 999px; border: 1px solid #ddd; color: #534AB7; text-decoration: none; }
+      .btn:hover { background: #f5f5f5; }
+      .section-title { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #aaa; margin-bottom: 1rem; }
+      .prose { font-size: 15px; color: #555; line-height: 1.7; }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/" style="font-size: 15px; font-weight: 500; color: #1a1a1a;">jpbascur.com</a>
+      <div>
+        <a href="/professional">professional</a>
+        <a href="/work-history">work history</a>
+        <a href="#">software</a>
+        <a href="#">writing</a>
+        <a href="#">blog</a>
+        <a href="#">hobbies</a>
+      </div>
+    </nav>
+
+    <h1>Professional</h1>
+
+    <p class="prose" style="margin-bottom: 2rem;">Data Scientist with 10 years of work experience, including 7 years in academia and 3 years in industry. I am passionate about helping people extract valuable insights from data and seek projects where I can both contribute and continue learning. I enjoy collaborating with colleagues and developing innovative solutions. I have experience in deploying machine learning models, deploying web based interactive visualizations, and extracting insights from data.</p>
+
+    <div class="section-title">CV</div>
+    <p class="cv-note">This is the most up-to-date version of my CV — the one I officially endorse.</p>
+    <div style="display: flex; gap: 10px; margin-bottom: 2rem;">
+      <a class="btn" href="/files/cv.pdf" target="_blank">Open CV</a>
+      <a class="btn" href="/files/cv.pdf" download>Download PDF</a>
+    </div>
+
+  </body>
+</html>
