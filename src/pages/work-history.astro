@@ -3,21 +3,26 @@
 import { getEntry, render } from 'astro:content';
 
 const entry = await getEntry('work', 'history');
-const { Content } = await render(entry);
+const { Content } = await render(entry!);
 ---
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Work History — Juan Pablo Bascur</title>
+    <title>Detailed Work History — Juan Pablo Bascur</title>
     <style>
       * { box-sizing: border-box; margin: 0; padding: 0; }
-      body { font-family: system-ui, sans-serif; max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; color: #1a1a1a; }
+      body { font-family: system-ui, sans-serif; color: #1a1a1a; }
+      .page { max-width: 1100px; margin: 0 auto; padding: 3rem 8rem; }
       nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; }
-      nav a { font-size: 13px; color: #888; text-decoration: none; margin-left: 1.5rem; }
-      nav a:hover { color: #1a1a1a; }
       h1 { font-size: 32px; font-weight: 500; margin-bottom: 0.5rem; }
-      .subtitle { font-size: 14px; color: #888; margin-bottom: 2rem; }
+      .subtitle { font-size: 14px; color: #888; margin-bottom: 2.5rem; }
+      .layout { display: flex; gap: 3rem; align-items: flex-start; }
+      .toc { width: 180px; flex-shrink: 0; position: sticky; top: 2rem; }
+      .toc-title { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #aaa; margin-bottom: 1rem; }
+      .toc a { display: block; font-size: 13px; color: #888; text-decoration: none; padding: 4px 0; border-left: 2px solid #eee; padding-left: 10px; transition: color 0.15s, border-color 0.15s; }
+      .toc a:hover { color: #1a1a1a; border-left-color: #534AB7; }
+      .prose { flex: 1; min-width: 0; }
       .prose { font-size: 15px; color: #555; line-height: 1.7; }
       .prose h2 { font-size: 20px; font-weight: 500; color: #1a1a1a; margin: 2.5rem 0 1rem; }
       .prose h3 { font-size: 16px; font-weight: 500; color: #1a1a1a; margin: 1.5rem 0 0.5rem; }
@@ -34,23 +39,32 @@ const { Content } = await render(entry);
     </style>
   </head>
   <body>
+  <div class="page">
     <nav>
-      <a href="/" style="font-size: 15px; font-weight: 500; color: #1a1a1a;">jpbascur.com</a>
-      <div>
-        <a href="/professional">professional</a>
-        <a href="/work-history">work history</a>
-        <a href="#">software</a>
-        <a href="#">writing</a>
-        <a href="#">blog</a>
-        <a href="#">hobbies</a>
-      </div>
+      <a href="/professional" style="font-size: 13px; color: #888; text-decoration: none;">← Professional Space</a>
     </nav>
 
-    <h1>Work History</h1>
-    <p class="subtitle">For the curious — the story behind the resume.</p>
+    <h1>Detailed Work History</h1>
 
-    <div class="prose">
-      <Content />
+    <div class="layout">
+      <div class="toc">
+        <div class="toc-title">Contents</div>
+        <a href="#personal-information">Personal Information</a>
+        <a href="#topics-of-expertise">Topics of Expertise</a>
+        <a href="#programming-languages">Programming Languages</a>
+        <a href="#natural-languages">Natural Languages</a>
+        <a href="#education">Education</a>
+        <a href="#work-experience">Work Experience</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#academic-service">Academic Service</a>
+        <a href="#peer-reviews">Peer Reviews</a>
+        <a href="#conferences">Conferences</a>
+      </div>
+
+      <div class="prose">
+        <Content />
+      </div>
     </div>
+  </div>
   </body>
 </html>

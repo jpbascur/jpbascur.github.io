@@ -161,6 +161,7 @@ Evaluating the workshop program and assisting on events.
 
 | Conference | Year |
 |------------|------|
+| European Conference on Information Retrieval / International Workshop on Scholarly Information Access | 2026 |
 | Dutch-Belgian Information Retrieval Workshop | 2025 |
 | Government Policies and Scientific Collaboration Symposium | 2025 |
 | International Conference on Computational Social Science | 2025 |
