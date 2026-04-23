@@ -8,4 +8,13 @@ const work = defineCollection({
   }),
 });
 
-export const collections = { work };
+const stories = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/stories' }),
+  schema: z.object({
+    title: z.string(),
+    note: z.string().optional(),
+    date: z.date(),
+  }),
+});
+
+export const collections = { work, stories };

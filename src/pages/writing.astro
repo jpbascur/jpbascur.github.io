@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+const stories = await getCollection('stories');
+stories.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Creative Writing — Juan Pablo Bascur</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: 'Georgia', serif; background: #1a1a1a; color: #f5f0e8; min-height: 100vh; padding: 2.5rem 1.5rem; }
+      nav { display: flex; justify-content: space-between; align-items: center; max-width: 680px; margin: 0 auto 4rem; }
+      nav a { font-size: 13px; color: #555; text-decoration: none; font-family: system-ui, sans-serif; }
+      nav a:hover { color: #f5f0e8; }
+      .content { max-width: 680px; margin: 0 auto; }
+      .label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: #555; font-family: system-ui, sans-serif; margin-bottom: 1rem; }
+      h1 { font-size: 48px; font-weight: 400; line-height: 1.2; margin-bottom: 3rem; }
+      .story-list { display: flex; flex-direction: column; gap: 0; }
+      .story-item { padding: 1.5rem 0; border-bottom: 1px solid #2a2a2a; text-decoration: none; color: inherit; display: block; transition: padding-left 0.15s; }
+      .story-item:hover { padding-left: 8px; }
+      .story-title { font-size: 20px; font-weight: 400; margin-bottom: 4px; }
+      .story-note { font-size: 13px; color: #555; font-family: system-ui, sans-serif; }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/personal">← Personal Space</a>
+    </nav>
+    <div class="content">
+      <div class="label">Creative Writing</div>
+      <h1>Stories</h1>
+      <div class="story-list">
+        {stories.map(story => (
+          <a class="story-item" href={`/writing/${story.id}`}>
+            <div class="story-title">{story.data.title}</div>
+            {story.data.note && <div class="story-note">{story.data.note}</div>}
+          </a>
+        ))}
+      </div>
+    </div>
+  </body>
+</html>
