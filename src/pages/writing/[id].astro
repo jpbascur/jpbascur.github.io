@@ -35,8 +35,8 @@ const isReport = story.data.presentation === 'report';
       .report-shell { max-width: 760px; }
       .report-shell .note { color: #8e877b; }
       .report-shell h1 { font-size: clamp(38px, 7vw, 56px); margin-bottom: 1rem; }
-      .report-rule { border: 0; border-top: 1px solid #4a4339; margin: 2rem 0 3rem; }
       .report-shell .prose { color: #d1c9ba; }
+      .report-shell .prose :global(hr) { visibility: hidden; margin: 3rem 0; }
       .report-shell .prose h2 { border-top: 1px solid #39342d; padding-top: 1.25rem; font-family: system-ui, sans-serif; font-size: 20px; font-weight: 650; letter-spacing: 0.025em; }
       .report-shell .prose h3 { color: #a69d8e; font: 650 12px/1.3 system-ui, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; margin: 2.5rem 0 1rem; }
       .report-shell .prose h3[id^="personal-notes"] { color: #ad8e7d; }
@@ -53,7 +53,6 @@ const isReport = story.data.presentation === 'report';
     <div class:list={["content", { "report-shell": isReport }]}>
       {story.data.note && <div class="note">{story.data.note}</div>}
       <h1>{story.data.title}</h1>
-      {isReport && <hr class="report-rule" />}
       <div class="prose">
         <Content />
       </div>
