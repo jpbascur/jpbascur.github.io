@@ -14,6 +14,7 @@ const stories = defineCollection({
     title: z.string(),
     note: z.string().optional(),
     date: z.date(),
+    presentation: z.enum(['standard', 'report']).default('standard'),
   }),
 });
 
