@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import Seo from '../components/Seo.astro';
 const stories = await getCollection('stories');
 stories.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
@@ -7,7 +8,7 @@ stories.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Creative Writing — Juan Pablo Bascur</title>
+    <Seo title="Creative Writing — Juan Pablo Bascur" description="Stories and creative writing by Juan Pablo Bascur." />
     <style>
       * { box-sizing: border-box; margin: 0; padding: 0; }
       body { font-family: 'Georgia', serif; background: #1a1a1a; color: #f5f0e8; min-height: 100vh; padding: 2.5rem 1.5rem; }

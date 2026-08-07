@@ -1,6 +1,7 @@
 ---
 // Work history page: warm, narrative, for curious readers. Tells the story behind the resume. Content lives in src/content/work/history.md
 import { getEntry, render } from 'astro:content';
+import Seo from '../components/Seo.astro';
 
 const entry = await getEntry('work', 'history');
 const { Content } = await render(entry!);
@@ -9,7 +10,7 @@ const { Content } = await render(entry!);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Detailed Work History — Juan Pablo Bascur</title>
+    <Seo title="Detailed Work History — Juan Pablo Bascur" description="Juan Pablo Bascur's detailed education, data science experience, teaching, academic service, and conference history." />
     <style>
       * { box-sizing: border-box; margin: 0; padding: 0; }
       body { font-family: system-ui, sans-serif; color: #1a1a1a; }

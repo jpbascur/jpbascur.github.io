@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jpbascur.com/sitemap-index.xml
