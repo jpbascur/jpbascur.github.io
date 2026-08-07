@@ -51,8 +51,11 @@ Programming · Interdisciplinary research · Information retrieval · Open Scien
 
 ## Work Experience
 
+### Senior Data Analyst
+*Elsevier — July 2026–present*
+
 ### Data Scientist — Multiversatory
-*Leiden University — 2025–ongoing*
+*Leiden University — 2025–June 2026*
 
 Project: [Multiversatory](https://doi.org/10.31235/osf.io/dn2ax)
 
@@ -108,7 +111,7 @@ Functional predictions of genes inferred from genetic similarity networks, inclu
 ## Teaching
 
 ### Teacher Assistant — Data Science
-*Leiden University — 2021–ongoing | Master students*
+*Leiden University — 2021–2026 | Master students*
 
 Courses: Information retrieval · Text Mining · Data science · Essentials of machine learning · Artificial intelligence for business · Urban computing · Algorithms and Data structures
 
