@@ -51,12 +51,12 @@ const isReport = story.data.presentation === 'report';
     <nav>
       <a href="/writing">← Stories</a>
     </nav>
-    <div class:list={["content", { "report-shell": isReport }]}>
+    <main class:list={["content", { "report-shell": isReport }]}>
       {story.data.note && <div class="note">{story.data.note}</div>}
       <h1>{story.data.title}</h1>
-      <div class="prose">
+      <article class="prose">
         <Content />
-      </div>
-    </div>
+      </article>
+    </main>
   </body>
 </html>

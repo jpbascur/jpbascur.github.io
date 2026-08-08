@@ -1,0 +1,20 @@
+# Juan Pablo Bascur
+
+> Personal website of Juan Pablo Bascur Cifuentes, Senior Data Analyst at Elsevier. The site covers his professional experience, research publications, data-science projects, CV, and creative writing.
+
+## Professional
+
+- [Professional profile](https://jpbascur.com/professional/): Current profile and access to the official CV.
+- [Detailed work history](https://jpbascur.com/work-history/): Education, employment, teaching, academic service, and expertise.
+- [Publications and projects](https://jpbascur.com/publications/): Research papers, open-source software, and live data-science tools.
+- [Curriculum vitae](https://jpbascur.com/files/cv.pdf): Current CV in PDF format.
+
+## Personal
+
+- [Personal space](https://jpbascur.com/personal/): Entry point for personal projects, interests, and writing.
+- [Creative writing](https://jpbascur.com/writing/): Index of stories by Juan Pablo Bascur.
+
+## Identity
+
+- [ORCID](https://orcid.org/0000-0002-4077-1024)
+- [Google Scholar](https://scholar.google.com/citations?user=8oH7CMsAAAAJ)
